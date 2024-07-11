@@ -1,0 +1,145 @@
+.Todolist {
+  max-width: 600px;
+
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 80px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #e7dddd;
+  border-radius: 4px;
+}
+
+.Todolist input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #e7dddd;
+  border-radius: 4px;
+}
+
+.Todolist button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Todolist button:hover {
+  background-color: #218838;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo p {
+  flex: 1;
+  margin: 0;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+
+.todo input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.todo button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo button:hover {
+  background-color: #c82333;
+}
+
+.todo.completed p {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.edit-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.edit-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.edit-task input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.edit-task button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-task button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .Todolist {
+    padding: 15px;
+  }
+
+  .Todolist input[type="text"] {
+    width: calc(100% - 70px);
+  }
+
+  .edit-task input[type="text"] {
+    width: calc(100% - 100px);
+  }
+}
